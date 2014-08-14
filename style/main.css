@@ -1,0 +1,8 @@
+html	{
+	height:100%;
+}
+body	{
+	background:#fff;
+	background-image: url('/images/calm.jpg');
+	background-attachment: fixed;
+}
