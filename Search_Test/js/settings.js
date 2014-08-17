@@ -3,7 +3,6 @@ var settings = {
 		"engines": [
 			["http://www.google.com/search", "q", "Google"],
 			["http://www.google.com/images", "q", "Google Images"],
-			["http://search.yahoo.com/search", "p", "Yahoo"],
 			["http://wikipedia.org/w/index.php", "w", "Wikipedia"],
 			["http://www.dict.cc", "s", "dict.cc"],
 			["http://www.flickr.com/search", "q", "flickr"],
