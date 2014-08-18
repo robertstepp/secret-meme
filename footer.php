@@ -1,4 +1,5 @@
 <?php
+
 echo '
 <br />
 <p id="footer">&copy; 
