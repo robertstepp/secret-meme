@@ -6,3 +6,10 @@
 	border-top: solid black 2px;
 	padding-top: 10px;
 }
+#clockbox	{
+	color: black;
+	position: absolute;
+	padding-top: .5em;
+	right: .5em;
+	font-size: 2em;
+}

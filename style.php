@@ -16,11 +16,11 @@ while($row = mysqli_fetch_array($types))    {
 	echo "#".$row['QgroupID']."_table	{
 	border: ;
 	}
-	#".$row['QgroupID']."_table:hover td.links	{
+	#".$row['QgroupID']."_table:hover tr.links	{
 	display: inline;
-	float: left;
 	}
 	";
 }
-echo '</style>';
+echo '</style>
+	<script type="text/javascript" src="js/clock.js"></script>';
 ?>

@@ -27,7 +27,7 @@ while($row = mysqli_fetch_array($types))    {
 		// Display bookmarks under groupIDs //
 		echo '
 		<tr class="links">
-			<td>
+			<td class="tdlinks">
 				<a href="' . $bookmarks['url'] . '" target="_blank">' . $bookmarks['title'] . '</a>
 			</td>
 		</tr>';

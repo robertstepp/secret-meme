@@ -2,6 +2,7 @@
 
 echo '
 <br />
+<div id="clockbox"></div>
 <p id="footer">&copy; 
 		<script type="text/javascript">
 			var d = new Date();
