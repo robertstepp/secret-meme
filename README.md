@@ -4,7 +4,7 @@ secret-meme
 Version 0.02 - Feature updates and formatting fixes
 Added Local and Zulu clock with clock.js using format HH:MM:SSL | HH:MM:SSZ
 Added script.php to head to simplify attachment of scripts.
-Added search function but still need to fix formatting.
+Added search function and fixed formatting.
 Changed diplay:none to tr instead of td as the rows were still appearing and messing up formatting.
 
 
