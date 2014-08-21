@@ -1,12 +1,15 @@
-function sbox(url,name,placeholder)	{
-	var sstring = '<form method="get" action="' + url + '"><input type=text" id="s" name="' + name + '" placeholder="' + placeholder + '" value=""><input type="submit" value ="' + placeholder + ' Search ">';
-	return sstring;
-}
-var search = "";
-for (var s = 0; s < settings.search.engine.length; s++) {
-	var engine = settings.search.engine[s];
-	search = search + sbox(engine[0], engine[1], engine[2]);
+function sbox(url, name, placeholder) {
+	var string = '<form method="get" action="' + url + '" target="_blank">'
+	           + '<input type="text" id="g" name="' + name + '" placeholder="' + placeholder + '" maxlength="255" value="">'
+	           + '<input type="submit" value="' + placeholder + ' Search">'
+	           + '</form>';
+	return string;
 }
 $(document).ready(function() {
+var search = "";
+for (var i = 0; i < settings.search.engines.length; i++) {
+		var engine = settings.search.engines[i];
+		search = search + sbox(engine[0], engine[1], engine[2]);
+	}
 document.getElementById('searchbox').innerHTML=search;
 });

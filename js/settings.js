@@ -1,6 +1,6 @@
 var settings = {
 	"search": {
-		"engine": [
+		"engines": [
 			["http://www.google.com/search", "q", "Google"],
 			["http://www.google.com/images", "q", "Google Images"],
 			["http://wikipedia.org/w/index.php", "w", "Wikipedia"],
