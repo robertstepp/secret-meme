@@ -8,5 +8,5 @@ for (var s = 0; s < settings.search.engine.length; s++) {
 	search = search + sbox(engine[0], engine[1], engine[2]);
 }
 $(document).ready(function() {
-document.getElementById('searchbox').innerHTML=""+search+"";
+document.getElementById('searchbox').innerHTML=search;
 });
