@@ -1,8 +1,5 @@
 function sbox(url, name, placeholder) {
-	var string = '<form method="get" action="' + url + '" target="_blank">'
-	           + '<input type="text" id="g" name="' + name + '" placeholder="' + placeholder + '" maxlength="255" value="">'
-	           + '<input type="submit" value="Search">'
-	           + '</form>';
+	var string = '<form method="get" action="' + url + '" target="_blank">' + '<input type="text" id="f" name="' + name + '" placeholder="' + placeholder + '" maxlength="255" value="">' + '<input type="submit" value="Make it so">' + '</form>';
 	return string;
 }
 $(document).ready(function() {
