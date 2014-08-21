@@ -11,6 +11,7 @@ echo '<!DOCTYPE html>
 	<title>' . $title . '</title>
 ';
 require 'style.php';
+require 'script.php';
 echo '
 </head>
 <body>
