@@ -13,3 +13,8 @@
 	right: .5em;
 	font-size: 2em;
 }
+#searchbox {
+	position: absolute;
+	top: 2em;
+	right: 2em;
+}

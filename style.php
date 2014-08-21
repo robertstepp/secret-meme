@@ -13,8 +13,7 @@ while($row = mysqli_fetch_array($types))    {
 	// Replace spaces with underscore in groupIDs //
 	$row['QgroupID'] = preg_replace('/\s+/', '_', $row['QgroupID']);
 	// Display groupIDs //	
-	echo "#".$row['QgroupID']."_table{border: ;}
-	#".$row['QgroupID']."_table:hover tr.links{display: inline;}
+	echo "#".$row['QgroupID']."_table:hover tr.links{display: inline;}
 	";
 }
 echo '</style>
