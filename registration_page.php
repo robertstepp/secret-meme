@@ -1,12 +1,12 @@
 <?php
 // Page Title //
-$title = "Login";
+$title = "Registration";
 // Page Description //
-$Description = "Login Page";
+$Description = "Registration Page";
 // Database //
 $DB="login";
 require 'db_connect.php'; // Database Connection //
 require 'head.php'; // Head portion of HTML //
-require 'login.php'; // Login portion of HTML //
+require 'registration.php'; // Login portion of HTML //
 require 'footer.php'; // Footer portion of HTML //
 ?>

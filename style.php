@@ -1,6 +1,5 @@
 <?php
-echo '
-	<link rel="stylesheet" type="text/css" href="style/reset.css" />
+echo '	<link rel="stylesheet" type="text/css" href="style/reset.css" />
 	<link rel="stylesheet" type="text/css" href="style/main.css" />
 	<link rel="stylesheet" type="text/css" href="style/class.css" />
 	<link rel="stylesheet" type="text/css" href="style/id.css">

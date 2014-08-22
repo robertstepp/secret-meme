@@ -3,7 +3,7 @@ echo '
 <form id="login_form" name="login_form" method="post" action="usercheck.php">
 	<table id="login_table">
 		<tr>
-			<td colspan="2">Login Form</td>
+			<th colspan="2">Login Form</th>
 		</tr>
 		<tr>
 			<td>Username:</td>
