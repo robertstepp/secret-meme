@@ -1,6 +1,7 @@
 <?php
+
 echo '
-<form name="registration" method="post" action="userregistration.php">
+<form name="registration" method="post" action="userregistration.php" onsubmit="return validateForm();">
 	<table id="registration_table">
 		<tr>
 			<th colspan="2">Registration Form</th>
@@ -20,13 +21,13 @@ echo '
 		<tr>
 			<td>Password:</td>
 			<td>
-				<input type="password" name="password1" id="password1"
+				<input type="password" name="password1" id="password1" />
 			</td>
 		</tr>
 		<tr>
 			<td>Password again:</td>
 			<td>
-				<input type="password" name="password2" id="password2"
+				<input type="password" name="password2" id="password2" />
 			</td>
 		</tr>
 		<tr>

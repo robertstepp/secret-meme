@@ -4,3 +4,7 @@
 .links	{
 	display: none;
 }
+.inputreq	{
+	border-top: red .2em solid;
+	border-bottom: red .2em solid;
+}
