@@ -33,6 +33,7 @@ echo '
 			<td>&nbsp;</td>
 			<td>
 				<input type="submit" name="button" id="button" value="Submit" />
+				<input type="reset" name="button2" id="button2" value="Oops!" />
 			</td>
 		</tr>
 	</table>
