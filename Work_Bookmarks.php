@@ -1,4 +1,5 @@
 <?php
+require 'session.php'; // Check if Session is set //
 // Page Title //
 $title="Work Bookmarks";
 // Page Type //

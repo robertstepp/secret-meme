@@ -1,6 +1,6 @@
 <?php
 ob_start();
-session_start;
+session_start();
 // Database //
 $DB="login";
 require 'db_connect.php';

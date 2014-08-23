@@ -1,5 +1,5 @@
 <?php
-//require 'session.php'; // Check if Session is set //
+require 'session.php'; // Check if Session is set //
 // Page Title //
 $title="Personal Bookmarks";
 // Page Type //
@@ -11,8 +11,5 @@ $DB="bookmarks";
 require 'db_connect.php'; // Database Connection //
 require 'head.php'; // Head portion of HTML //
 require 'table.php'; // Table layout for bookmarks //
-require 'footer.php'; //Footer portion of HTML //
-if(isset($_SESSION['username'])) {
-	echo $_SESSION['username'];
-}	
+require 'footer.php'; //Footer portion of HTML //	
 ?>
