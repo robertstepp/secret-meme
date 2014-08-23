@@ -69,7 +69,7 @@ function validateForm() {
 	if(!re.test(document.forms.registration.password1.value))	{
 		document.forms.registration.password2.className = "inputreq";
 		document.forms.registration.password1.className = "inputreq";
-		alert("The password must contain at least special character.");
+		alert("The password must contain at least one special character.");
 		return false;
 	}
 }

@@ -1,5 +1,8 @@
 <?php
-
+function generateRandomString($length = 50) {
+	return substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`~!@#$%^&*_-+=|\:<,>.?/"), 0, $length);
+}
+$salt = generateRandomString();
 echo '
 <form name="registration" method="post" action="userregistration.php" onsubmit="return validateForm();">
 	<table id="registration_table">
@@ -34,6 +37,7 @@ echo '
 			<td>&nbsp;</td>
 			<td>
 				<input type="submit" name="button" id="button" value="Submit" />
+				<input type="hidden" name="salt" id="salt" value="' . $salt . '" />
 				<input type="reset" name="button2" id="button2" value="Oops!" />
 			</td>
 		</tr>

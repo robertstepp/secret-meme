@@ -1,0 +1,8 @@
+CREATE TABLE members(
+  id INT  NOT NULL PRIMARY KEY AUTO_INCREMENT
+, username VARCHAR(101) NOT NULL
+, email VARCHAR(255) NOT NULL
+, hash VARCHAR(255) NOT NULL
+, salt VARCHAR(255) NOT NULL
+, UNIQUE (id,username,email,salt)
+);
