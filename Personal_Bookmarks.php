@@ -12,5 +12,7 @@ require 'db_connect.php'; // Database Connection //
 require 'head.php'; // Head portion of HTML //
 require 'table.php'; // Table layout for bookmarks //
 require 'footer.php'; //Footer portion of HTML //
-echo $_SESSION['username'];
+if(isset($_SESSION['username'])) {
+	echo $_SESSION['username'];
+}	
 ?>
