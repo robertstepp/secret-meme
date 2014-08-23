@@ -3,7 +3,7 @@ secret-meme
 Version 0.03 - Feature updates and formatting fixes
 Added login and registration abilities using mysql.
 Added Pacific Time for home.
-Working on session setting to allow multiple users.
+Added session settings to login.
 Working on formatting for login and registration pages to center data.
 
 Version 0.02 - Feature updates and formatting fixes
