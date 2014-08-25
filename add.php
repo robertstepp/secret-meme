@@ -17,11 +17,11 @@ if (isset($uid,$type,$groupid,$title,$url,$favicon,$nsfw,$home))	{
 	if ($res)  {
 		echo $title . ' added.';
 		sleep(10);
-		header('Location: ' . $_SERVER['HTTP_REFERER']);		
+		header('Location: ' . $_SERVER['HTTP_REFERER'] . '?result=success');		
 	}	else  {
 		echo $title . ' failed to add.';
 		sleep(10);
-		header('Location: ' . $_SERVER['HTTP_REFERER']);
+		header('Location: ' . $_SERVER['HTTP_REFERER'] . '?result=failure');
 	} 
 }
 ?>
