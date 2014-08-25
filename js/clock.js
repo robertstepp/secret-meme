@@ -29,8 +29,11 @@ function GetClock() {
 	if (psthour < 0) {
 		psthour = 24 + psthour;
 	}
+	if (psthour <=9) {
+		psthour = "0" + psthour;
+	}
 
 document.getElementById('clockbox').innerHTML = "" + nhour + ":" + nmin + ":" + nsec + "L | " + uhour + ":" + umin + ":" + usec + "Z | " + psthour + ":" + nmin + ":" + nsec + "P";
-setTimeout("GetClock()", 1000);
+setTimeout(GetClock(), 1000);
 }
 window.onload = GetClock;

@@ -1,8 +1,6 @@
 <?php
 ob_start();
 session_start();
-// Database //
-$DB="login";
 require 'db_connect.php';
 $username = $_POST['username'];
 $password = $_POST['password'];

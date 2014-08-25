@@ -1,6 +1,4 @@
 <?php
-// Database //
-$DB="login";
 require 'db_connect.php';
 $username = $_POST['username'];
 $email = $_POST['email'];

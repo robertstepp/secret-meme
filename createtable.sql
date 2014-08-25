@@ -1,11 +1,1 @@
-CREATE TABLE `settings` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `uid` INT(255),
-  `background` VARCHAR(255),
-  `fontsize` VARCHAR(255),
-  `fontcolor` VARCHAR(255),
-  PRIMARY KEY  (`id`)
-);
-
-
-ALTER TABLE `settings` ADD CONSTRAINT `settings_fk1` FOREIGN KEY (`uid`) REFERENCES members(`id`);
+INSERT INTO bookmarks(id,uid,type,groupid,title,url,favicon,nsfw,home,inputtime) VALUES (38,2,'Personal','Testing','testing','Testing','https://www.virtualbox.org/graphics/VirtualBox.ico','0','0','08/25/14 06:25 PM');

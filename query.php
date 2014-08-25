@@ -1,6 +1,6 @@
 <?php
 // Pull groupID information from DB based on Type defined by bookmark page //
-$types = mysqli_query($con,"SELECT `groupID` AS `QgroupID`  FROM `bookmarks`.`bookmarks` AS `bookmarks` WHERE type='" . $Type . "' GROUP BY `groupID` ORDER BY `QgroupID` ASC");
+$types = mysqli_query($con,"SELECT `groupID` AS `QgroupID`, 'uid' FROM `bookmarks`.`bookmarks` AS `bookmarks` WHERE type='" . $Type . "' AND uid='" . $_SESSION['sess_user_id'] . "' GROUP BY `groupID` ORDER BY `QgroupID` ASC");
 // Define array of groupID information pulled from DB //
 while($row = mysqli_fetch_array($types))    {
 	$QgroupIDcss = $row['QgroupID'];

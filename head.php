@@ -1,4 +1,5 @@
 <?php
+$ts="yes";
 echo '<!DOCTYPE html>
 <html>
 

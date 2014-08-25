@@ -6,10 +6,9 @@ $title="Personal Bookmarks";
 $Type="Personal";
 // Page Description //
 $Description="Personal Bookmark Page to allow use at home/work/travel.";
-// Database //
-$DB="bookmarks";
 require 'db_connect.php'; // Database Connection //
 require 'head.php'; // Head portion of HTML //
 require 'table.php'; // Table layout for bookmarks //
+require 'test.php';
 require 'footer.php'; //Footer portion of HTML //	
 ?>
