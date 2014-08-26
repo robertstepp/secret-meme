@@ -1,1 +1,0 @@
-INSERT INTO bookmarks(id,uid,type,groupid,title,url,favicon,nsfw,home,inputtime) VALUES (38,2,'Personal','Testing','testing','Testing','https://www.virtualbox.org/graphics/VirtualBox.ico','0','0','08/25/14 06:25 PM');
