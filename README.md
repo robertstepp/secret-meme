@@ -1,6 +1,14 @@
 secret-meme
 ===========
 ** SETUP IS IN WIKI **
+Version 0.04 - Feature additions and some formatting
+Added registration and login pages.
+Added add bookmarks pages.
+Added logout button to page when logged on.
+Added javascript to reload page when resizing and use window size for CSS.
+Changed to variable for background. Need to find a way to pull from settings table.
+Added debug to help troubleshoot when needed.
+
 Version 0.03 - Feature updates and formatting fixes
 Added login and registration abilities using mysql.
 Added Pacific Time for home.
