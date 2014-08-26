@@ -1,5 +1,5 @@
 <?php
-$ts="no";
+$ts="";
 echo '<!DOCTYPE html>
 <html>
 
