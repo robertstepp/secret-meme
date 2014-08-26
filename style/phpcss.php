@@ -3,6 +3,7 @@
 $textColor = "#f00";
 $aColor = "#ff0";
 $background = "/images/calm.jpg";
+
 ?>
 a	{
 	color: <?php echo $aColor; ?>;

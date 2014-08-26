@@ -1,9 +1,3 @@
-html	{
-	height:100%;
-}
-body	{
-	background:#fff;
-}
 form input {
 	background: #333;												/* Background search box */
 	background: -webkit-gradient(						/*		gradient for webkit */

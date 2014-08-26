@@ -17,6 +17,11 @@ if (isset($Type)) {
 		";
 		}
 }
-echo '</style>
+echo '
+	html	{		
+		height: '.$_GET['height'].'px;
+		width: '.$_GET['width'].'px;
+	}
+	</style>
 	';
 ?>
