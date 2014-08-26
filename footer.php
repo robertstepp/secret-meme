@@ -1,7 +1,9 @@
 <?php
-
+$login = 'login';
+if(strpos($_SERVER['PHP_SELF'],$login) == false) {
+	echo '<div id="logout"><a href="logout.php"><input type="submit" name="button" id="button" value="Logout" /></a></div>';
+}
 echo '
-<div id="logout"><a href="logout.php"><input type="submit" name="button" id="button" value="Logout" /></a></div>
 <div id="clockbox"></div>
 <p id="footer">&copy; 
 		<script type="text/javascript">
