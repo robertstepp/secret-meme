@@ -5,11 +5,13 @@ echo '<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javas
 	<script type="text/javascript" src="js/search.js"></script>
 	<script type="text/javascript" src="js/validation.js"></script>
 ';
-if ($_GET['result'] == 'failure')	{
+if(isset($_GET['result']))	{
+	if ($_GET['result'] == 'failure')	{
 	echo '	<script type="text/javascript" src="js/failure.js"></script>
 	';
 }	else if ($_GET['result'] == 'success')	{
 	echo '	<script type="text/javascript" src="js/success.js"></script>
 	';
+}
 }
 ?>
