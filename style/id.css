@@ -61,3 +61,16 @@
 	border-bottom-right-radius: 15px;
 	border-left: 0;
 }
+#logout input:hover	{
+	background: #c4c3c3;												/* Background search box */
+	background: -webkit-gradient(						/*		gradient for webkit */
+		linear,
+		left top,
+		left bottom,
+		from(#c4c3c3),
+		to(#222));
+	background: -moz-linear-gradient(				/*		gradient for gecko */
+		top,
+		#c4c3c3,
+		#222);
+}
