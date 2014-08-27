@@ -34,6 +34,6 @@ function GetClock() {
 	}
 
 document.getElementById('clockbox').innerHTML = "" + nhour + ":" + nmin + ":" + nsec + "L | " + uhour + ":" + umin + ":" + usec + "Z | " + psthour + ":" + nmin + ":" + nsec + "P";
-setTimeout(GetClock(), 1000);
+setTimeout('GetClock()', 1000);
 }
 window.onload = GetClock;

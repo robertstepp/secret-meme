@@ -5,6 +5,7 @@ if(strpos($_SERVER['PHP_SELF'],$login) == false) {
 }
 echo '
 <div id="clockbox"></div>
+<div id="searchbox"></div>
 <p id="footer">&copy; 
 		<script type="text/javascript">
 			var d = new Date();

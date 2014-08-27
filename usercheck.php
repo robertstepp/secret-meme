@@ -23,6 +23,6 @@ if ($submithash != $userData['hash'])	{
 	$_SESSION['sess_user_id'] = $userData['id'];
 	$_SESSION['sess_username'] = $userData['username'];
 	session_write_close();
-	header('Location: Personal_Bookmarks.php');
+	header('Location: index.php');
 }
 ?>
