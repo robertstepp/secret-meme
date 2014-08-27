@@ -1,6 +1,11 @@
 secret-meme
 ===========
 ** SETUP IS IN WIKI **
+Version 0.05 - 
+Added index.php as home page.
+Put home links on index page.
+Put navigation for other pages using form on index page.
+
 Version 0.04 - Feature additions and some formatting
 Added registration and login pages.
 Added add bookmarks pages.
