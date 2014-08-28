@@ -1,8 +1,8 @@
 <?php
+$from = $_POST['email'];
 $to = $_POST['to'];
 $subject = $_POST['subject'];
-$message = $_POST['message'];
-$from = $_POST['email'];
+$message = $from . " // " . $_POST['message'];
 $retval = mail ($to,$subject,$message,$header);
    if( $retval == true )  
    {

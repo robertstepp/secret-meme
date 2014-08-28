@@ -1,5 +1,6 @@
 <?php
-$ts="";
+$debug="n";
+require 'set_settings.php';
 echo '<!DOCTYPE html>
 <html>
 
