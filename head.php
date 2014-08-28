@@ -11,8 +11,8 @@ echo '<!DOCTYPE html>
 	<meta name="description" content="' . $Description . '">
 	<title>' . $title . '</title>
 ';
-require 'style.php';
-require 'script.php';
+require 'style/style.php';
+require 'js/script.php';
 echo '
 </head>
 <body>

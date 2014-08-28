@@ -1,6 +1,10 @@
 <?php
 // NSFW from url //
-$nsfw = $_GET['purity'];
+if(isset($_GET['purity']))  {
+	$nsfw = $_GET['purity'];
+}	else  {
+	$nsfw = '0';
+}
 // Pull groupID information from DB based on Type defined by bookmark page //
 $types = mysqli_query($con,"SELECT `groupID` AS `QgroupID`, 'uid' FROM `bookmarks`.`bookmarks` AS `bookmarks` WHERE type='" . $Type . "' AND uid='" . $_SESSION['sess_user_id'] . "' AND nsfw='" . $nsfw . "' OR type='" . $Type . "' AND uid='" . $_SESSION['sess_user_id'] . "' AND nsfw='0' GROUP BY `groupID` ORDER BY `QgroupID` ASC");
 // Define array of groupID information pulled from DB //

@@ -1,11 +1,14 @@
 <?php
 $login = 'login';
-if(strpos($_SERVER['PHP_SELF'],$login) == false) {
-	echo '<div id="logout"><a href="logout.php"><input type="submit" name="button" id="button" value="Logout" /></a></div>';
+if(isset($_SESSION['sess_user_id'])) {
+	if(strpos($_SERVER['PHP_SELF'],$login) == false) {
+		echo '<div id="logout"><a href="logout.php"><input type="submit" name="button" id="button" value="Logout" /></a></div>
+		<div id="searchbox"></div>';
+		}
 }
 echo '
 <div id="clockbox"></div>
-<div id="searchbox"></div>
+
 <p id="footer">&copy; 
 		<script type="text/javascript">
 			var d = new Date();
@@ -15,5 +18,6 @@ echo '
 		</script>
 	Vyper, Inc</p>
 </body>
-</html>'
+</html>';
+require 'debug.php';
 ?>
