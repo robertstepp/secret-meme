@@ -5,7 +5,7 @@ Version 0.06 -
 Added request account page using email to request@global-bookmarks.com.
 Added ability to change wallpaper per user using sessions.
 Added Google Analytics for both ORG and COM.
-
+Added Home button to footer directed to index.php.
 
 Version 0.05 - 
 Added index.php as home page.
