@@ -1,6 +1,12 @@
 secret-meme
 ===========
 ** SETUP IS IN WIKI **
+Version 0.06 -
+Added request account page using email to request@global-bookmarks.com.
+Added ability to change wallpaper per user using sessions.
+Added Google Analytics.
+
+
 Version 0.05 - 
 Added index.php as home page.
 Put home links on index page.

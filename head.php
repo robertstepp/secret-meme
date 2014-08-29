@@ -14,6 +14,7 @@ echo '<!DOCTYPE html>
 ';
 require 'style/style.php';
 require 'js/script.php';
+require 'googleanalytics.php';
 echo '
 </head>
 <body>

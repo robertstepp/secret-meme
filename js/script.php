@@ -18,8 +18,7 @@ if(isset($_GET['result']))	{
 	echo '	<script type="text/javascript" src="js/failure.js"></script>
 	';
 }	else if ($_GET['result'] == 'success')	{
-	echo '	<script type="text/javascript" src="js/success.js"></script>
-	';
+	echo '	<script type="text/javascript" src="js/success.js"></script>';
 }
 }
 ?>
