@@ -4,7 +4,7 @@ secret-meme
 Version 0.06 -
 Added request account page using email to request@global-bookmarks.com.
 Added ability to change wallpaper per user using sessions.
-Added Google Analytics.
+Added Google Analytics for both ORG and COM.
 
 
 Version 0.05 - 
