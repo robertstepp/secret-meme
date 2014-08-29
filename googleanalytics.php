@@ -1,5 +1,5 @@
 <?php
-if ($_SERVER['HTTP_HOST'] == "http://global-bookmarks.com/")	{
+if ($_SERVER['HTTP_HOST'] == "global-bookmarks.com")	{
 	echo "<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -9,7 +9,7 @@ if ($_SERVER['HTTP_HOST'] == "http://global-bookmarks.com/")	{
   ga('send', 'pageview');
 </script>
 ";
-} else if ($_SERVER['HTTP_HOST'] == "http://global-bookmarks.org/"){
+} else if ($_SERVER['HTTP_HOST'] == "global-bookmarks.org"){
 echo "<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

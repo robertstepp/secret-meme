@@ -12,7 +12,7 @@ echo '
 		<tr>
 			<td>Username:</td>
 			<td>
-				<input type="text" name="username" id="username" />
+				<input type="text" name="username" id="username" autofocus />
 			</td>
 		</tr>
 		<tr>
