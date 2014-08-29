@@ -12,7 +12,7 @@ if(isset($_SESSION['sess_user_id'])) {
 		}
 }	else  {
 	echo '<div id="request">
-		<a href="requestaccount.php"><input type="submit" name="requestbutton" id="requestbutton" value="Request Account" /></a>&nbsp;
+		<a href="registration_page.php"><input type="submit" name="registrationbutton" id="registrationbutton" value="Register" /></a>&nbsp;
 	</div>';
 }
 echo '
