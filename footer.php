@@ -4,10 +4,15 @@ if(isset($_SESSION['sess_user_id'])) {
 	if(strpos($_SERVER['PHP_SELF'],$login) == false) {
 		echo '<div id="logout">
 		<a href="index.php"><input type="submit" name="homebutton" id="homebutton" value="Home" /></a>&nbsp;
+		<a href="add_bookmarks.php"><input type="submit" name="addbutton" id="addbutton" value="Add Bookmarks" /></a>&nbsp;
 		<a href="logout.php"><input type="submit" name="logoutbutton" id="logoutbutton" value="Logout" /></a>
 		</div>
 		<div id="searchbox"></div>';
 		}
+}	else  {
+	echo '<div id="request">
+		<a href="requestaccount.php"><input type="submit" name="requestbutton" id="requestbutton" value="Request Account" /></a>&nbsp;
+	</div>';
 }
 echo '
 <div id="clockbox"></div>

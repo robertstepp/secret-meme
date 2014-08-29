@@ -20,6 +20,9 @@ echo '
 				</td>
 		</tr>
 		<tr>
+			<td>Add Type if not listed:</td>
+			<td><input type="text" name="type" id="type" /></td>
+		<tr>
 			<td>Group:</td>
 			<td><input type="text" name="groupid" id="groupid" /></td>
 		</tr>

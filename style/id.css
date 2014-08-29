@@ -22,15 +22,15 @@
 	top: 2em;
 	right: 2em;
 }
-#logout	{
+#logout, #request	{
 	position: absolute;
 	top: .5em;
 	right:2em;
 }
-#logout a	{
+#logout a, #request a	{
 	text-decoration:none;
 }
-#logout input	{
+#logout input, #request input	{
 	width: 6em;
 	background: #666;												/* Background search box */
 	background: -webkit-gradient(						/*		gradient for webkit */
@@ -65,7 +65,7 @@
 	border-bottom-right-radius: 15px;
 	border-left: 0;
 }
-#logout input:hover	{
+#logout input:hover, #request input:hover	{
 	background: #c4c3c3;												/* Background search box */
 	background: -webkit-gradient(						/*		gradient for webkit */
 		linear,

@@ -1,3 +1,3 @@
 <?php
-header('Location: /' .$_POST['type'] . '_Bookmarks.php'. '?purity=' . $_POST['nsfw'])
+header('Location: /bookmarks.php'. '?type='. ucwords ($_POST['type']) . '&purity=' . $_POST['nsfw'])
 ?>
