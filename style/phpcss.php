@@ -5,7 +5,7 @@ $textColor = "#f00";
 $aColor = "#ff0";
 $background = "/images/calm.jpg";
 if (isset($_SESSION['userbackground']))  {
-	$background = "/images/" . $_SESSION['userbackground'];
+	$background = "/upload/" . $_SESSION['userbackground'];
 }
 if(isset($_SESSION['userbackgroundcolor'])) {
 	$backgroundcolor = $_SESSION['userbackgroundcolor'];

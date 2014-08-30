@@ -1,8 +1,11 @@
 <?php
+$current_url = $_SERVER['REQUEST_URI'];
+$current_url = explode('?', $current_url);
+$urlpath = $current_url[0] . "?" . $current_url[1];
 echo '<script language="JavaScript"> 
 		window.onresize = function screensize()	{
 	<!--
-    document.location="'.$_SERVER['REQUEST_URI'].'?resolution=1&width="+window.innerWidth+"&height="+window.innerHeight;      
+    document.location="'.$urlpath.'&resolution=1&width="+window.innerWidth+"&height="+window.innerHeight;      
 	//-->
 	}
 	</script>

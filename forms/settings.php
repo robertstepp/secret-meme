@@ -17,7 +17,8 @@ echo '
 		</tr>
 		<tr>
 			<td>Wallpaper:</td>
-			<td><input type="text" name="background" value="' . $csettings['background'] . '" /></td>
+			<td><input type="text" name="background" value="' . $csettings['background'] . '" /><a href="upload_page.php"><input type="button" name="uploadbutton" id="uploadbutton" value="Upload" /></a></td>
+			
 		</tr>
 		<tr>
 			<td>Font Color:</td>

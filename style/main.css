@@ -1,7 +1,8 @@
 body	{
 	color: #eee;
 	background-image: url('/images/calm.jpg');
-	background-attachment: fixed;
+	background-attachment: fixed;	
+    background-position: center; 
 }
 form input {
 	background: #333;												/* Background search box */
