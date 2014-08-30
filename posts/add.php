@@ -9,7 +9,13 @@ $url		= $_POST['url'];
 $favicon	= $_POST['favicon'];
 $nsfw		= $_POST['nsfw'];
 $home		= $_POST['home'];
-
+if (empty($favicon))  {
+	$baseurl = strpos($url,'/',$offset=9);
+	$favicon = substr($url, 0, $baseurl) . "/favicon.ico";
+}
+if (empty($type))  {
+	$type = ucwords ($_POST['typet']);
+}
 if (isset($uid,$type,$groupid,$title,$url,$favicon,$nsfw,$home))	{
 	$sql = "INSERT INTO bookmarks (uid,type,groupid,title,url,favicon,nsfw,home) VALUES ('".$uid."','".$type."','".$groupid."','".$title."','".$url."','".$favicon."','".$nsfw."','".$home."')";
 	$res = mysqli_query($con,$sql);

@@ -21,10 +21,10 @@ echo '
 		</tr>
 		<tr>
 			<td>Add Type if not listed:</td>
-			<td><input type="text" name="type" id="type" /></td>
+			<td><input type="text" name="typet" id="type" /> Usually Personal(Home) or Work</td>
 		<tr>
 			<td>Group:</td>
-			<td><input type="text" name="groupid" id="groupid" /></td>
+			<td><input type="text" name="groupid" id="groupid" /> This is how the bookmarks are put together</td>
 		</tr>
 		<tr>
 			<td>Title:</td>
@@ -46,7 +46,7 @@ echo '
 		<tr>
 			<td>Home Screen:</td>
 			<input type="hidden" value="0" name="home" />
-			<td><input type="checkbox" name="home" value="1" /></td>
+			<td><input type="checkbox" name="home" value="1" /> These will show up on the main page</td>
 		</tr>
 		<tr>
 			<td>&nbsp;</td>

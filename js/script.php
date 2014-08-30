@@ -3,7 +3,7 @@ $current_url = $_SERVER['REQUEST_URI'];
 $current_url = explode('?', $current_url);
 $urlpath = $current_url[0]  . "?";
 if (isset($current_url[1]))  {
-		if (strpos($current_url[1],'resolution') == 1) {
+		if ((strpos($current_url[1],'resolution') == 1) || (strpos($current_url[1],'result') == 1))  {
 			$urlpath = $current_url[0];
 		}  else  {
 			$urlpath = $urlpath . $current_url[1];
