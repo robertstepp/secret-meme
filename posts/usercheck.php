@@ -8,8 +8,9 @@ $username = mysql_real_escape_string($username);
 
 $query = "SELECT id,username,hash,salt FROM members WHERE username = '".$_POST['username']."';";
 $result = mysqli_query($con,$query);
-if (mysql_num_rows($result) == 0)	{
+if (mysqli_num_rows($result) == 0)	{
 	header('Location: ../login_page.php');
+	return;
 }
 $userData = mysqli_fetch_array($result,MYSQL_ASSOC);
 $submithash = crypt($password, '$6$rounds=15000$'.$userData['salt']);

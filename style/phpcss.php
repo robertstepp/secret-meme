@@ -7,13 +7,18 @@ $background = "/images/calm.jpg";
 if (isset($_SESSION['userbackground']))  {
 	$background = "/images/" . $_SESSION['userbackground'];
 }
+if(isset($_SESSION['userbackgroundcolor'])) {
+	$backgroundcolor = $_SESSION['userbackgroundcolor'];
+}
 if(isset($_SESSION['fontsize']))	{
-	$fontsize = $_SESSION['userfontsize'] . "px";
+	$fontsize = $_SESSION['userfontsize'];
 }
 if(isset($_SESSION['userfontcolor'])) {
 	$textColor = $_SESSION['userfontcolor'];
 	$aColor = $_SESSION['userfontcolor'];
 }
+
+
 
 ?>
 a	{
@@ -22,6 +27,6 @@ a	{
 body	{
 	color: <?php echo $textColor; ?>;
 	background-image: url('<?php echo $background; ?>');
-	background-attachment: fixed;
-	font-size: <?php echo $fontsize;?>;
+	font-size: <?php echo $fontsize; ?>em;
+	background-color: <?php echo $backgroundcolor; ?>
 }

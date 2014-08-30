@@ -8,7 +8,6 @@ if (isset($_GET['result']))  {
 
 echo '
 <form name="request_account" method="post" action="../posts/request.php" onsubmit="return validateRequestForm();">
-	<input type="hidden" name="to" value="request@global-bookmarks.com" />
 	<input type="hidden" name="subject" value="Request Account" />
 	<table id="requestaccount">		
 		<tr>

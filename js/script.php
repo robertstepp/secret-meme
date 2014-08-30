@@ -2,7 +2,7 @@
 echo '<script language="JavaScript"> 
 		window.onresize = function screensize()	{
 	<!--
-    document.location="'.$_SERVER['PHP_SELF'].'?resolution=1&width="+window.innerWidth+"&height="+window.innerHeight;      
+    document.location="'.$_SERVER['REQUEST_URI'].'?resolution=1&width="+window.innerWidth+"&height="+window.innerHeight;      
 	//-->
 	}
 	</script>
