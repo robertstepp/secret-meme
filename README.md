@@ -9,7 +9,8 @@
    +-+-+-+-+-+-+-+-+-+-+-+
    |s|e|c|r|e|t|-|m|e|m|e|
    +-+-+-+-+-+-+-+-+-+-+-+
-===========
+
+
 ** SETUP IS IN WIKI **
 Version 0.06 -
 Added request account page using email to request@global-bookmarks.com.
