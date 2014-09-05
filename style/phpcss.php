@@ -30,3 +30,10 @@ body	{
 	font-size: <?php echo $fontsize; ?>em;
 	background-color: <?php echo $backgroundcolor; ?>
 }
+#footer  {
+	color: <?php echo $textColor; ?>;
+	border-color: <?php echo $textColor; ?>;
+}
+#clockbox	{
+	color: <?php echo $textColor; ?>;
+}

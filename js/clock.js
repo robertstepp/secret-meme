@@ -33,7 +33,7 @@ function GetClock() {
 		psthour = "0" + psthour;
 	}
 
-document.getElementById('clockbox').innerHTML = "" + nhour + ":" + nmin + ":" + nsec + "L | " + uhour + ":" + umin + ":" + usec + "Z | " + psthour + ":" + nmin + ":" + nsec + "P";
+document.getElementById('clockbox').innerHTML = "" + nhour + ":" + nmin + ":" + nsec + "L | " + uhour + ":" + umin + ":" + usec + "Z";
 setTimeout('GetClock()', 1000);
 }
 window.onload = GetClock;

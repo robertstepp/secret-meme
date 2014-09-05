@@ -27,8 +27,11 @@ while($row = mysqli_fetch_array($types))    {
 		// Display bookmarks under groupIDs //
 		echo '
 		<tr class="links">
-			<td class="tdlinks">
-				<a href="' . $bookmarks['url'] . '" target="_blank">' . $bookmarks['title'] . '</a>
+			<td class="tdlinks">';
+			if (!empty($bookmarks['favicon']))  {
+				echo '<img src="' . $bookmarks['favicon'] . '" height="16" />';
+		}
+		echo '<a href="' . $bookmarks['url'] . '" target="_blank">' . $bookmarks['title'] . '</a>
 			</td>
 		</tr>';
 	}	
