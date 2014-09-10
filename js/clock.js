@@ -25,7 +25,7 @@ function GetClock() {
 	if (usec <= 9) {
 		usec = "0" + usec;
 	}
-	psthour = uhour - 8;
+	psthour = uhour - 7;
 	if (psthour < 0) {
 		psthour = 24 + psthour;
 	}
@@ -34,6 +34,7 @@ function GetClock() {
 	}
 
 document.getElementById('clockbox').innerHTML = "" + nhour + ":" + nmin + ":" + nsec + "L | " + uhour + ":" + umin + ":" + usec + "Z";
+document.getElementById('contact').innerHTML = "<a href='mailto:webmaster@global-bookmarks.com' name='Contact Us'>Contact</a>";
 setTimeout('GetClock()', 1000);
 }
 window.onload = GetClock;

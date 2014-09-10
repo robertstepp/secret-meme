@@ -4,7 +4,7 @@ if(isset($_SESSION['sess_user_id'])) {
 	if(strpos($_SERVER['PHP_SELF'],$login) == false) {
 		echo '<div id="logout">
 		<a href="index.php"><input type="submit" name="homebutton" id="homebutton" value="Home" /></a>&nbsp;
-		<a href="settings_page.php"><input type="submit" name="settingsbutton" id="settingsbutton" value="Settings" /></a>&nbsp;
+		<a href="settings_page.php"><input type="button" name="settingsbutton" id="settingsbutton" value="Settings" /></a>&nbsp;
 		<a href="add_bookmarks.php"><input type="submit" name="addbutton" id="addbutton" value="Add Bookmarks" /></a>&nbsp;
 		<a href="logout.php"><input type="submit" name="logoutbutton" id="logoutbutton" value="Logout" /></a>
 		</div>
@@ -17,6 +17,8 @@ if(isset($_SESSION['sess_user_id'])) {
 }
 echo '
 <div id="clockbox"></div>
+<div id="contactbox"><p id="contact"><a href="mailto:webmaster@global-bookmarks.com" name="Contact Us">Contact</a></p></div>
+
 
 <p id="footer">&copy; 
 		<script type="text/javascript">

@@ -18,10 +18,11 @@ if ((($_FILES["file"]["type"] == "image/gif")
     echo "Return Code: " . $_FILES["file"]["error"] . "<br>";
   } else {
    if (file_exists("../upload/" . $_FILES["file"]["name"])) {
-      echo $_FILES["file"]["name"] . " already exists. ";
+	  header('Location: ' . $_SERVER['HTTP_REFERER'] . '?result=failure');
     } else {
       move_uploaded_file($_FILES["file"]["tmp_name"],
       "../upload/" . $_FILES["file"]["name"]);
+	   header('Location: /settings_page.php?result=success');
     }
   }
 } else {

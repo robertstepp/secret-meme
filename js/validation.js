@@ -75,19 +75,11 @@ function validateForm() {
 }
 function validateRequestForm()  {
 	var x = document.forms.request_account.email.value;
-	var t = document.forms.request_account.to.value;
-	var s = document.forms.request_account.subject.value;
-	if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {
-		document.forms.request_account.email.className = "inputreq";
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+		document.forms.registration.email.className = "inputreq";
         alert("Not a valid e-mail address");
         return false;
     }
-	if (t !== "request@global-bookmarks.com")  {
-		alert("Unable to send");
-		return false;
-	}
-	if (s !== "Request Account")  {
-		alert("Unable to send");
-		return false;
-	}
 }
