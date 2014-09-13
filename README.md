@@ -1,5 +1,6 @@
-secret-meme
+secret-meme(Global-Bookmarks.com/org)
 ===========
+
 ** SETUP IS IN WIKI **
 Version 0.06 -
 Added request account page using email to request@global-bookmarks.com.
